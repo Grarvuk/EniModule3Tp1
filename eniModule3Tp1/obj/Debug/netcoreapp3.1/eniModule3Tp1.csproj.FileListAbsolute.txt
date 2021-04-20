@@ -1,0 +1,13 @@
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\bin\Debug\netcoreapp3.1\eniModule3Tp1.exe
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\bin\Debug\netcoreapp3.1\eniModule3Tp1.deps.json
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\bin\Debug\netcoreapp3.1\eniModule3Tp1.runtimeconfig.json
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\bin\Debug\netcoreapp3.1\eniModule3Tp1.runtimeconfig.dev.json
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\bin\Debug\netcoreapp3.1\eniModule3Tp1.dll
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\bin\Debug\netcoreapp3.1\eniModule3Tp1.pdb
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\obj\Debug\netcoreapp3.1\eniModule3Tp1.csprojAssemblyReference.cache
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\obj\Debug\netcoreapp3.1\eniModule3Tp1.AssemblyInfoInputs.cache
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\obj\Debug\netcoreapp3.1\eniModule3Tp1.AssemblyInfo.cs
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\obj\Debug\netcoreapp3.1\eniModule3Tp1.csproj.CoreCompileInputs.cache
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\obj\Debug\netcoreapp3.1\eniModule3Tp1.dll
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\obj\Debug\netcoreapp3.1\eniModule3Tp1.pdb
+C:\Users\Luis\source\repos\eniTp1\eniModule3Tp1\obj\Debug\netcoreapp3.1\eniModule3Tp1.genruntimeconfig.cache
