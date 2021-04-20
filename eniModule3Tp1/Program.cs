@@ -19,6 +19,7 @@ namespace eniModule3Tp1
             var lesAuteursAvecG = ListeAuteurs.Where(Auteur => Auteur.Nom.StartsWith("G"));
             AfficherList(lesAuteursAvecG, "Les auteurs commencons avec un G : ");
 
+            /*
             //Premiere etape, je compte les auteurs par livres ecris
             var auteurParLivreEcris =
             from Livre in ListeLivres
@@ -36,6 +37,34 @@ namespace eniModule3Tp1
             //Deuxieme etape, je choisis celui qui en a ecris le plus
             Console.WriteLine("Le plus de livres "+auteurPlusDelivres.Auteur.Nom +" " + auteurPlusDelivres.Auteur.Prenom + " nombre de livres : " + auteurPlusDelivres.Nombre);
             Console.WriteLine("Le moins de livres " + auteurMoinsDelivres.Auteur.Nom + " " + auteurMoinsDelivres.Auteur.Prenom + " nombre de livres : " + auteurMoinsDelivres.Nombre);
+            */
+
+            IGrouping<Auteur, Livre> lePlusDeLivre = ListeLivres.GroupBy(x => x.Auteur).OrderByDescending(x => x.Count()).FirstOrDefault();
+            Console.WriteLine("Le plus de livre " + lePlusDeLivre.Key.Nom + " "+lePlusDeLivre.Key.Prenom);
+
+            IGrouping<Auteur, Livre> leMoinsDeLivre = ListeLivres.GroupBy(x => x.Auteur).OrderBy(x => x.Count()).FirstOrDefault();
+            Console.WriteLine("Le moins de livres " + leMoinsDeLivre.Key.Nom + " " + leMoinsDeLivre.Key.Prenom);
+
+            ListeLivres.GroupBy(x => x.Auteur).ToList().ForEach(x =>
+            {
+                Console.WriteLine(x.Key.Nom + " "+ x.Key.Prenom);
+                Console.WriteLine(x.Average(y => y.NbPages));
+            }
+            );
+
+            //Pour le plus de page
+            var lePlusDePage = ListeLivres.OrderByDescending(x => x.NbPages).FirstOrDefault();
+            Console.WriteLine("Le livre avec le plus de page " + lePlusDePage.Titre + " " + lePlusDePage.NbPages);
+
+            //Les sous sous gagnés en moyenne
+            //ListeAuteurs.Where(x => x.Factures.Count > 0).Average(x.Factures.Average(y => y.Montant));
+
+            //Afficher les auteurs avec leurs livres
+            Object qqch;
+            
+            ListeLivres.OrderBy(x => x.Auteur).ToList().ForEach(x => {
+                Console.WriteLine(x.Auteur.Nom + " " + x.Auteur.Prenom + " " + x.Titre);
+            });
         }
 
 
